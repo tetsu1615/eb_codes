@@ -1,0 +1,172 @@
+* {
+    list-style: none;
+    margin : 0;
+    padding : 0;
+    font-size: 100%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+div {
+    display: block;
+}
+
+body {
+    margin : 0;
+    color : #24292E;
+    font-size: 0.9rem;
+}
+
+li {
+    display: list-item;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width : 960px;
+    margin : 0 auto 100px auto;
+    padding: 0 4%;
+    box-sizing: border-box;
+}
+
+
+#header {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+}
+
+.header-logo {
+    line-height: 1px;
+    padding : 10px 0;
+}
+
+.header-logo a {
+    display: block;
+}
+
+.header-logo img {
+    width : 120px;
+}
+
+
+nav li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+#mainvisual {
+    margin-bottom: 80px;
+}
+
+#mainvisual img {
+    width : 100%;
+    max-width: 1920px;
+    height : 600px;
+    object-fit : cover;
+    border-style: none;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.wrapper h2 {
+    display: inline-block;
+    font-size : 32px;
+    margin-top: 0;
+    margin-bottom : 60px;
+    border-bottom: 1px solid #383E45;
+}
+
+#about img {
+    width : 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.img {
+    padding-right:  30px;
+    margin : auto 0;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+
+.text {
+    text-align: left;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+#about h3 {
+    margin : 10px 0;
+}
+
+#bicycle ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#bicycle li {
+    width : 32%;
+}
+
+.content-title {
+    margin : 10px 0;
+}
+
+.footer p {
+    text-align: center;
+}
+
+.footer {
+    padding : 10px 0;
+    font-size: 0.5rem;
+}
+
+
+/*-- responsive --*/
+
+@media screen and (max-width: 600px) {
+
+#mainvisual img {
+    height: calc(100vh - 60px);
+}
+
+.content {
+    flex-direction: column;
+    text-align: center;
+}
+
+.img {
+    padding-right: 0;
+}
+
+.text {
+    margin : 0 auto;
+}
+
+#bicycle ul {
+    flex-direction: column;
+}
+
+#bicycle li {
+    width : 100%;
+    margin-bottom: 30px;
+}
+
+}
